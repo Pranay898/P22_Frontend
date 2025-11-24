@@ -11,6 +11,8 @@ import Register from './pages/Register';
 import CreatePin from './pages/CreatePin';
 import Profile from './pages/Profile';
 
+import PinDetail from './pages/PinDetail';
+
 const App: React.FC = () => {
   return (
     <div>
@@ -22,6 +24,7 @@ const App: React.FC = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/create" element={<CreatePin />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/pin/:id" element={<PinDetail />} />
         </Routes>
       </div>
     </div>

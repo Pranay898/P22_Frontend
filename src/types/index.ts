@@ -4,6 +4,8 @@ export interface User {
   fullName: string;
   profilePic?: string;
   roles: string[];
+  accountType?: 'PERSONAL' | 'BUSINESS';
+  websiteUrl?: string;
 }
 
 export interface Pin {
@@ -14,6 +16,8 @@ export interface Pin {
   createdAt: string;
   user?: User;
   board?: Board;
+  isSponsored?: boolean;
+  promotionUrl?: string;
 }
 
 export interface Board {
